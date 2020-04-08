@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <meta charset="UTF-8">
+    <body>
+        <p><a id="link" href="http://www.google.com">Text</a></p>
+        <button onclick="diminuiFonte()">Diminuir Fonte</button>
+        <button onclick="aumentaFonte()">Aumentar Fonte</button>
+        <button onclick="alteraHref()">Alterar HREF</button>
+
+        <script>
+            function aumentaFonte() {
+                document.documentElement.style.fontSize = "50px";
+            }
+            function diminuiFonte() {
+                document.documentElement.style.fontSize = "10px";
+            }
+            function alteraHref () {
+                var elLink = document.getElementById("link");
+                elLink.href = "http://www.terra.com.br";
+            }
+                 
+        </script>
+    </body> 
+</html>
